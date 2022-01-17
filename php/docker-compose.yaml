@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  php-cli:
+    build: docker/php-cli
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      PHP_IDE_CONFIG: "serverName=localhost"
+    volumes:
+      - ./:/opt/project
+    user: ${HOST_UID}:${HOST_GID}
