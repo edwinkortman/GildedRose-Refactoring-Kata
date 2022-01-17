@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+set -eu
+ARGS="php -dxdebug.mode=debug $@" make php
