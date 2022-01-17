@@ -62,7 +62,7 @@ PHPUnit is configured for testing, a composer script has been provided. To run t
 project run:
 
 ```shell script
-composer test
+dev/composer test
 ```
 
 A Windows a batch file has been created, like an alias on Linux/Mac (e.g. `alias pu="composer test"`), the same
@@ -77,7 +77,7 @@ pu
 To run all test and generate a html coverage report run:
 
 ```shell script
-composer test-coverage
+dev/composer test-coverage
 ```
 
 The test-coverage report will be created in /builds, it is best viewed by opening /builds/**index.html** in your
@@ -93,7 +93,7 @@ standard!
 To check code, but not fix errors:
 
 ```shell script
-composer check-cs
+dev/composer check-cs
 ``` 
 
 On Windows a batch file has been created, like an alias on Linux/Mac (e.g. `alias cc="composer check-cs"`), the same
@@ -108,7 +108,7 @@ cc
 ECS provides may code fixes, automatically, if advised to run --fix, the following script can be run:
 
 ```shell script
-composer fix-cs
+dev/composer fix-cs
 ```
 
 On Windows a batch file has been created, like an alias on Linux/Mac (e.g. `alias fc="composer fix-cs"`), the same
@@ -123,7 +123,7 @@ fc
 PHPStan is used to run static analysis checks:
 
 ```shell script
-composer phpstan
+dev/composer phpstan
 ```
 
 On Windows a batch file has been created, like an alias on Linux/Mac (e.g. `alias ps="composer phpstan"`), the same
